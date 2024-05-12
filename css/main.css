@@ -1,0 +1,228 @@
+@import url('fonts/fontat.css');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, .main {
+    width: 100%;
+    height: auto;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+}
+#screen-cover {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .96);
+    z-index: 100000;
+    transition: 1s;
+}
+/*------- All sections --------*/
+.b1,.b2,.b3,.b4,.b5,.b6 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+
+/*------- You will see it if use mobile phone only --------*/
+#notSupported {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100003;
+    background-color: #FFF;
+    display: none;
+}
+
+/*------- Welcome msg and define the site --------*/
+.welcome {
+    width: 60%;
+    height: 550px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #eedce6;
+    box-shadow: 0 0 2px 1px #eecbdf;
+    border-radius: 8px;
+    z-index: 100001;
+    transition: .8s;
+}
+.welcome .wel-cover {
+    width: 200px;
+    height: 200px;
+    background-image: url('../imgs/university-logo2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+.welcome .wel-msg {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 5px 1px #e1bbd1;
+    background-color: #d8bd9f;
+    line-height: 50px;
+    padding: 15px;
+}
+.welcome h1 {
+    font-family: Changa;
+    color: #140c40;
+}
+.welcome .wel-msg h2 {
+    font-family: Changa;
+    color: #140c40;
+    margin-top: 15px;
+}
+.welcome .wel-msg h3 {
+    font-family: cairo;
+    color: #21278f;
+}
+.welcome .wel-msg p {
+    line-height: 30px;
+    font-size: large;
+    font-family: cairo;
+    text-align: center;
+}
+.welcome span {
+    padding: 8px 12px;
+    color: #FFF;
+    background-color: #140c40;
+    box-shadow: 0 0 4px 1px #140c40;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: cairo;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .4s;
+    overflow: hidden;
+}
+
+.welcome span .effect {
+    width: 200px;
+    height: 55px;
+    background-color: #191e7d;
+    position: absolute;
+    top: -5px;
+    left: 235px;
+    text-align: center;
+    line-height: 40px;
+}
+.welcome span:hover {
+    background-color: #4f8869;
+    box-shadow: 0 0 4px 1px #4f8869;
+}
+.welcome span:hover .effect {
+    left: 68px;
+}
+
+/*------- To Top Button --------*/
+.totop {
+    width: 50px;
+    height: 50px;
+    background-color: #cd37aa;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    display: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.totop:hover {
+    background-color: #940054;
+}
+
+/*------- Scrollbar --------*/
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-track {
+    background-color: #b2ceca;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(146, 57, 255);
+}
+
+/* One Corona Virus - Animation */
+.f-img {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1005;
+    animation: covido 3s linear infinite;
+    transition: 3s;
+    opacity: 1;
+}
+.f-img img {
+    width: 80px;
+}
+.f-img::before {
+    content: 'اوعى الفيروس يا عم الحاج';
+    position: fixed;
+    top: -50px;
+    left: 100px;
+    padding: 5px;
+    color: #FFF;
+    font-size: 21px;
+    border-radius: 5px;
+    background-color: red;
+    filter: drop-shadow(0 0 0 #000);
+    opacity: 0;
+    text-align: center;
+    transition: .5s;
+}
+.f-img:hover::before {
+    opacity: 1;
+}
+@keyframes covido {
+    0% {
+        top: 40%;
+        transform: rotate(20deg);
+        filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.7));
+    }
+    50% {
+        top: 60%;
+        transform: rotate(0deg);
+        filter: drop-shadow(0px 15px 3px rgba(0, 0, 0, 0.4));
+    }
+    75% {
+        top: 50%;
+        transform: rotate(-10deg);
+        filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.0));
+    }
+    100% {
+        top: 40%;
+        transform: rotate(20deg);
+        filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.7));
+    }
+}

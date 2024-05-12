@@ -1,0 +1,41 @@
+
+@media (max-width:1250px) {
+    
+    .main {
+        display: none;
+    }
+
+    #notSupported {
+        display: block;
+    }
+
+    .notSupp {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .unSupportMsg,
+    .unSupportImg {
+        padding: 20px;
+    }
+    
+    .unSupportMsg {
+        text-align: center;
+    }
+    .unSupportMsg h2 {
+        color: #4877ad;
+        text-shadow: 0 0 10px #86aedc;
+        font-family: Cairo;
+    }
+    .unSupportImg {
+        width: fit-content;
+    }
+    .unSupportImg img {
+        width: 400px;
+    }
+
+}

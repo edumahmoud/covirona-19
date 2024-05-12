@@ -1,0 +1,159 @@
+.creators {
+    height: calc(100vh + 100px);
+    background-color: #2f2d2d;
+    padding-top: 50px;
+    position: relative;
+    scroll-snap-type: none;
+}
+
+.creators::before {
+    content: 'CREATORS';
+    position: absolute;
+    top: 15%;
+    right: 50%;
+    transform: translateX(50%);
+    line-height: 50vh;
+    color: #2f2d2d;
+    font-size:  15em;
+    -webkit-text-stroke: 0.03cm #fff;
+    font-family: Cairo, Geneva, Tahoma, sans-serif;
+    opacity: .08;
+    overflow: hidden;
+}
+
+.creators .c-all {
+    width: 85%;
+    height: 90%;
+    position: absolute;
+    top: 8%;
+    right: 50%;
+    transform: translateX(50%);
+    /*border: 2px solid red;*/
+    padding: 5px;
+    opacity: 0;
+    transition: 4s;
+}
+.creators .c-all .c-head {
+    width: 100%;
+    height: 25%;
+    /*border: 2px solid red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creators .c-all .c-head .fcr {
+    width: 400px;
+    height: auto;
+    /*border: 2px solid red;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.creators .c-all .c-head .fcr .fcr-img,
+.creators .c-all .c-right .cr .cr-img,
+.creators .c-all .c-left .cr .cr-img {
+    width: 60px;
+    height: 60px;
+    /*border: 2px solid rgb(188, 107, 107);*/
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.creators .c-all .c-head .fcr .fcr-img {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creators .c-all .c-head .fcr .fcr-des h3 {
+    color: #FFF;
+    font-family: Changa;
+    transition: .2s;
+}
+
+.creators .c-all .c-right,
+.creators .c-all .c-left {
+    width: calc(50% - 10px);
+    height: calc(75% - 10px);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.creators .c-all .c-right {
+    right: 5px;
+}
+
+.creators .c-all .c-left {
+    left: 5px;
+}
+
+.creators .c-all .c-right .cr,
+.creators .c-all .c-left .cr {
+    width: 100%;
+    height: 70px;
+    margin-top: 8px;
+    display: flex;
+    position: relative;
+    left: 10px;
+    top: 0px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.creators .c-all .c-right .cr {
+    flex-direction: row-reverse;
+}
+
+.creators .c-all .c-left .cr {
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.creators .c-all .c-right .cr .cr-des,
+.creators .c-all .c-left .cr .cr-des {
+    width: 300px;
+}
+
+.creators .c-all .c-right .cr .cr-des{
+    margin-left: 20px;
+}
+
+.creators .c-all .c-left .cr .cr-des {
+    margin-right: 20px;
+}
+
+.creators .c-all .c-right .cr .cr-des h3,
+.creators .c-all .c-left .cr .cr-des h3 {
+    color: #FFF;
+    line-height: 55px;
+    font-family: Changa;
+    transition: .2s;
+}
+
+.creators .c-all .c-right .cr .cr-des h3 {
+    text-align: left;
+}
+
+.creators .c-all .c-left .cr .cr-des h3 {
+    text-align: right;
+}
+
+.creators .c-all .c-head .fcr .fcr-des h3:hover {
+    color: #22b0ca;
+}
+
+.creators .c-all .c-right .cr .cr-des h3:hover {
+    color: #c73c96;
+}
+
+.creators .c-all .c-left .cr .cr-des h3:hover {
+    color: #c73c96;
+}

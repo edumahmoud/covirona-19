@@ -1,0 +1,32 @@
+.video {
+    background-color: rgb(230, 235, 238);
+    display: flex;
+    flex-direction: row;
+    padding-right: 0;
+}
+
+.vid {
+    width: 650px;
+    position: relative;
+    top: 110px;
+    height: 470px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 3px 1px rgba(99, 97, 97, 0.6);
+    margin: 10px 20px;
+}
+
+.vid h1 {
+    padding: 0 10px 0 0;
+    margin-top: 10px;
+    border-right: 5px solid #6e0a0a;
+    font-family: changa;
+}
+.vid p {
+    line-height: 25px;
+    margin-top: 0px;
+    padding: 0 10px;
+    font-family: cairo;
+    font-size: 15px;
+}
