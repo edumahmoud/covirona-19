@@ -7,7 +7,6 @@
 
 // بعض المتغيرات لإستدعاء العناصر المطلوبة من صفحة Html
 let header      = document.querySelector('.header'),
-    headerr     = document.querySelector('.headerr'),
     logo        = document.querySelector('.logo'),
     listItem    = document.querySelectorAll('.list ul li'),
     totopBtn    = document.querySelector('.totop'),
