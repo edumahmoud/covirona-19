@@ -58,6 +58,13 @@
             background-color: #007BFF;
             color: white;
         }
+        .cr {
+            text-align: center;
+            color: black;
+        }
+        .cr a {
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -90,6 +97,7 @@
                 </tr>
             </tbody>
         </table>
+        <span class="cr">Created by ❤️ with <a href="https://www.facebook.com/m.helaly0">Tech - Mahmoud Ramadan</a></span>
     </div>
     
     <script>
@@ -116,16 +124,13 @@
 
             let colResult, rowResult;
             if (cType === 'h') {
-                colResult = col - 1;
+                colResult = col;
                 rowResult = row;
             } else if (cType === 'o') {
                 if (col == 0) {
-                    col = 16;
-                    row = row - 1;
-                } else {
-                    colResult = col;
-                    rowResult = row;
-                }
+                    colResult = 16;
+                    rowResult = row - 1;
+            }
                 
             } else {
                 document.getElementById('result').innerText = 'يرجى اختيار نوع الكابينة الصحيح!';
