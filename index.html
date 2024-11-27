@@ -86,17 +86,18 @@
         <table id="result-table" class="result-table" style="display:none;">
             <thead>
                 <tr>
-                    <th>العمود</th>
                     <th>الصف</th>
+                    <th>العمود</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td id="col-result"></td>
                     <td id="row-result"></td>
+                    <td id="col-result"></td>
                 </tr>
             </tbody>
         </table>
+        <br /><br />
         <span class="cr">Created by ❤️ with <a href="https://www.facebook.com/m.helaly0">Tech - Mahmoud Ramadan</a></span>
     </div>
     
@@ -138,8 +139,8 @@
                 return;
             }
 
-            document.getElementById('col-result').innerText = colResult;
             document.getElementById('row-result').innerText = rowResult;
+            document.getElementById('col-result').innerText = colResult;
             document.getElementById('result-table').style.display = 'table';
         }
     </script>
