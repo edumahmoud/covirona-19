@@ -131,7 +131,10 @@
                 if (col == 0) {
                     colResult = 16;
                     rowResult = row - 1;
-            }
+                } else {
+                    colResult = col;
+                    rowResult = row;
+                }
                 
             } else {
                 document.getElementById('result').innerText = 'يرجى اختيار نوع الكابينة الصحيح!';
